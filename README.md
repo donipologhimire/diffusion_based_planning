@@ -52,7 +52,7 @@ The model also shows impressive generalization to new scenarios not seen during 
 The diffusion model works by gradually denoising a random Gaussian noise distribution into a coherent trajectory. The following visualization shows this process:
 
 <!-- ![Denoising Process](figures/combined_final_selected_frames.png) -->
-<img src="figures/combined_final_selected_frames.png" alt="Denoising Process" width="500"/>
+<img src="figures/denoising_trajectory.png" alt="Denoising Process" width="800"/>
 
 This visualization shows several key steps in the denoising process:
 1. Initially, the trajectory is pure Gaussian noise
@@ -98,7 +98,7 @@ python inference_diffusion_policy_refined_cfg.py
 
 ## Citation
 
-If you find this work useful in your research, please consider citing:
+If you find this work useful in your work or research, please consider citing:
 
 ```bibtex
 @software{ghimire2025diffusion,
