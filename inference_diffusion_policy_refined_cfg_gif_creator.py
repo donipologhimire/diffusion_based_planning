@@ -1,5 +1,3 @@
-# --- START OF FILE inference_diffusion_policy_refined_cfg.py --- # Renamed
-
 import torch
 import torch.nn as nn
 import numpy as np
@@ -86,9 +84,6 @@ def extract(a, t, x_shape):
     return out.reshape(batch_size, *((1,) * (len(x_shape) - 1)))
 
 # --- Model Definition (MUST BE IDENTICAL TO CFG TRAINING SCRIPT) ---
-# --- Paste the IDENTICAL model definition (ConditionalUNet1D and its sub-modules) here ---
-# --- from your `train_diffusion_policy_refined_cfg.py`          ---
-# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 # -- Building Blocks --
 class SinusoidalPosEmb(nn.Module):
     def __init__(self, dim):
@@ -577,5 +572,3 @@ if __name__ == "__main__":
         plt.savefig(f"generated_trajectory_cfg_scale{GUIDANCE_SCALE}.png") # Save with scale in name
         print(f"Plot saved to generated_trajectory_cfg_scale{GUIDANCE_SCALE}.png")
         plt.show()
-
-    # --- END OF FILE inference_diffusion_policy_refined_cfg.py ---

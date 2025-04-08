@@ -1,5 +1,3 @@
-# --- START OF FILE train_diffusion_policy_refined_cfg.py --- # Renamed for clarity
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -132,9 +130,7 @@ class TrajectoryDataset(Dataset):
         return self.trajectories[idx], self.start_goal_coords[idx], self.obstacle_maps[idx]
 
 # --- Model Architecture: Conditional 1D U-Net (Refined) ---
-# --- Paste the IDENTICAL model definition (ConditionalUNet1D and its sub-modules) here ---
-# --- from your previous `train_diffusion_policy_refined.py`      ---
-# vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
 # -- Building Blocks --
 class SinusoidalPosEmb(nn.Module):
     def __init__(self, dim):
@@ -483,5 +479,3 @@ if __name__ == "__main__":
     plt.savefig('training_plot_refined_cfg.png') # New plot name
     print("Training plot saved to training_plot_refined_cfg.png")
     # plt.show()
-
-# --- END OF FILE train_diffusion_policy_refined_cfg.py ---

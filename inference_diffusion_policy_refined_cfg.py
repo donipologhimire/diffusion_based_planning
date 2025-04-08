@@ -1,5 +1,3 @@
-# --- START OF FILE inference_diffusion_policy_refined_cfg.py --- # Renamed
-
 import torch
 import torch.nn as nn
 import numpy as np
@@ -9,7 +7,7 @@ import torch.nn.functional as F
 from tqdm import tqdm
 import math
 import os
-import pickle # To potentially load dataset info for validation if needed
+import pickle 
 
 # --- Constants and Configuration ---
 # !!! MUST MATCH CFG TRAINING SCRIPT !!!
@@ -385,5 +383,3 @@ if __name__ == "__main__":
     plt.savefig(f"generated_trajectory_cfg_scale{GUIDANCE_SCALE}.png") # Save with scale in name
     print(f"Plot saved to generated_trajectory_cfg_scale{GUIDANCE_SCALE}.png")
     plt.show()
-
-# --- END OF FILE inference_diffusion_policy_refined_cfg.py ---
