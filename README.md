@@ -13,7 +13,9 @@ Key features:
 - Normalizes and processes trajectories to a consistent format
 - Saves the dataset with trajectories and their conditions (start, goal, obstacle map)
 
-![Expert Trajectory Example](figures/expert_trajectory.png)
+<!-- ![Expert Trajectory Example](figures/expert_trajectory.png) -->
+<img src="figures/expert_trajectory.png" alt="Expert Trajectory Example" width="500"/>
+
 
 ## 2. Model Training
 
@@ -36,17 +38,21 @@ Key features:
 - Generates smooth, collision-free trajectories between any valid start and goal
 - Visualizes the results with the obstacle map
 
-![Best Generated Trajectory](figures/best_generated_trajectory.png)
+<!-- ![Best Generated Trajectory](figures/best_generated_trajectory.png) -->
+<img src="figures/best_generated_trajectory.png" alt="Best Generated Trajectory" width="500"/>
 
 The model also shows impressive generalization to new scenarios not seen during training:
 
-![Trajectory Evolution](figures/trajectory_evolution_best.gif)
+<!-- ![Trajectory Evolution](figures/trajectory_evolution_best.gif) -->
+<img src="figures/trajectory_evolution_best.gif" alt="Trajectory Evolution" width="500"/>
+
 
 ## 4. Denoising Process Visualization
 
 The diffusion model works by gradually denoising a random Gaussian noise distribution into a coherent trajectory. The following visualization shows this process:
 
-![Denoising Process](figures/combined_final_selected_frames.png)
+<!-- ![Denoising Process](figures/combined_final_selected_frames.png) -->
+<img src="figures/combined_final_selected_frames.png" alt="Denoising Process" width="500"/>
 
 This visualization shows several key steps in the denoising process:
 1. Initially, the trajectory is pure Gaussian noise
