@@ -40,7 +40,7 @@ Key features:
 
 The model also shows impressive generalization to new scenarios not seen during training:
 
-![Trajectory Evolution](figures/trajectory_evolution_Best.png)
+![Trajectory Evolution](figures/trajectory_evolution_best.png)
 
 ## 4. Denoising Process Visualization
 
@@ -56,6 +56,15 @@ This visualization shows several key steps in the denoising process:
 5. The final result is a collision-free path connecting start and goal
 
 The model enforces the constraints at both endpoints (start and goal positions) throughout the entire denoising process while learning to navigate around obstacles.
+
+## Model Files
+
+The trained model files exceed GitHub's file size limits and are not included in this repository. To use this project:
+
+1. Download the model files from [this Google Drive folder](https://drive.google.com/drive/folders/1TqqesEUCl98pXbLvBY5s6jEBNImMX1mc?usp=sharing)
+2. Place them in the following locations:
+   - `diffusion_policy_unet_refined_cfg.pth`
+
 
 ## Requirements
 - PyTorch
@@ -79,3 +88,17 @@ python train_diffusion_policy_refined_cfg.py
 ```
 python inference_diffusion_policy_refined_cfg.py
 ```
+
+
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@software{ghimire2025diffusion,
+  author = {Ghimire, Donipolo},
+  title = {Diffusion-Based Path Planning},
+  year = {2025},
+  url = {https://github.com/donipologhimire/diffusion_based_planning},
+  version = {1.0.0}
+}
