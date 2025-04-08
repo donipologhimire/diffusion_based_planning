@@ -40,7 +40,7 @@ Key features:
 
 The model also shows impressive generalization to new scenarios not seen during training:
 
-![Trajectory Evolution](figures/trajectory_evolution_best.png)
+![Trajectory Evolution](figures/trajectory_evolution_best.gif)
 
 ## 4. Denoising Process Visualization
 
