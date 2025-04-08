@@ -68,8 +68,8 @@ The model enforces the constraints at both endpoints (start and goal positions) 
 The trained model files exceed GitHub's file size limits and are not included in this repository. To use this project:
 
 1. Download the model files from [this Google Drive folder](https://drive.google.com/drive/folders/1TqqesEUCl98pXbLvBY5s6jEBNImMX1mc?usp=sharing)
-2. Place them in the following locations:
-   - `diffusion_policy_unet_refined_cfg.pth`
+2. Place it in the following repository:
+   - `./diffusion_policy_unet_refined_cfg.pth`
 
 
 ## Requirements

@@ -14,8 +14,8 @@ import pickle # To potentially load dataset info for validation if needed
 # --- Constants and Configuration ---
 # !!! MUST MATCH CFG TRAINING SCRIPT !!!
 # !!! Update path to the CFG-trained model !!!
-# MODEL_CHECKPOINT_PATH = 'diffusion_policy_unet_refined_cfg.pth'
-MODEL_CHECKPOINT_PATH = 'model_epoch_120.pth'
+MODEL_CHECKPOINT_PATH = 'diffusion_policy_unet_refined_cfg.pth'
+# MODEL_CHECKPOINT_PATH = 'model_epoch_120.pth'
 
 GRID_SIZE = 50
 STATE_DIM = 2
